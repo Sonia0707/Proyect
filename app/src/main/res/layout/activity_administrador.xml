@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#d8000000"
+    tools:context=".Administrador">
+
+
+    <ImageButton
+        android:id="@+id/btnPersonal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="170dp"
+        android:background="@drawable/btn_fondo_color"
+        app:srcCompat="@mipmap/ic_launcher_agendap" />
+
+    <TextView
+        android:id="@+id/Personal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agenda Personal"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textAlignment="center"/>
+    <ImageButton
+        android:id="@+id/btnCompartida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_fondo_color"
+        app:srcCompat="@mipmap/ic_launcher_agendap" />
+
+    <TextView
+        android:id="@+id/Compartida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agenda Compartida"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textAlignment="center"/>
+    <ImageButton
+        android:id="@+id/btnGrupal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_fondo_color"
+        app:srcCompat="@mipmap/ic_launcher_agendap" />
+
+    <TextView
+        android:id="@+id/Grupal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agenda Personal"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/btnCerrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/btn_fondo_color"
+        android:elevation="5dp"
+        android:text="CERRAR SESION"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+</LinearLayout>
