@@ -42,16 +42,15 @@ public class Usuario extends AppCompatActivity implements View.OnClickListener {
                 break;
             case R.id.btnCompartida:
                 //startActivity(new Intent(this, AGcompartida.class));
+
                 break;
             case R.id.btnGrupal:
                 //startActivity(new Intent(this, AGcompartida.class));
                 break;
             case R.id.btnCerrar:
 
-
-
-                Intent intent = new Intent(getApplicationContext(),Login_Main.class);
-                startActivity(intent);
+                Intent intent4 = new Intent(getApplicationContext(),Login_Main.class);
+                startActivity(intent4);
                 finish();
                 break;
 

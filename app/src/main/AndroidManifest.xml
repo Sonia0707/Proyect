@@ -14,10 +14,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity
-            android:name=".TareasComp"
-            android:label="@string/title_activity_tareas_comp"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".Login_Main" />
         <activity
             android:name=".Usuario"
