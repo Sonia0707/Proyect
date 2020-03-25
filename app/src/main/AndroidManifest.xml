@@ -14,18 +14,25 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Login_Main"></activity>
-        <activity android:name=".Usuario"
-            android:label="Usuario"/>
-        <activity android:name=".Administrador"
-            android:label="Administrator"   />
+        <activity
+            android:name=".TareasComp"
+            android:label="@string/title_activity_tareas_comp"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Login_Main" />
+        <activity
+            android:name=".Usuario"
+            android:label="Usuario" />
+        <activity
+            android:name=".Administrador"
+            android:label="Administrator" />
         <activity
             android:name=".OlvidoPassword"
             android:label="Olvide Contraseña" />
         <activity
             android:name=".Registro"
             android:label="Registrar" />
-        <activity android:name=".OkLogueado"
+        <activity
+            android:name=".OkLogueado"
             android:label="Schedule">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
