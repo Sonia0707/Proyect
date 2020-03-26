@@ -42,6 +42,9 @@ public class Usuario extends AppCompatActivity implements View.OnClickListener {
                 break;
             case R.id.btnCompartida:
                 //startActivity(new Intent(this, AGcompartida.class));
+                Intent intent2 = new Intent(getApplicationContext(),TareasComp.class);
+                startActivity(intent2);
+                finish();
 
                 break;
             case R.id.btnGrupal:
