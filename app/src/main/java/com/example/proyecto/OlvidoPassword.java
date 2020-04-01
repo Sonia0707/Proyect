@@ -43,7 +43,7 @@ public class OlvidoPassword extends AppCompatActivity implements View.OnClickLis
 
         if (!email.isEmpty()){
             //metodo enviar
-            enviarCorreo("http://192.168.1.129/email/index.php");
+            enviarCorreo("http://192.168.1.131/email/index.php");
         }else {
             Toast.makeText(this, "No se permiten campos vacios", Toast.LENGTH_SHORT).show();
         }

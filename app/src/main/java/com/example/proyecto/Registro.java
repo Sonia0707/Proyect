@@ -17,6 +17,9 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -48,7 +51,7 @@ public class Registro extends AppCompatActivity implements View.OnClickListener 
         email = idCorreo.getText().toString();
 
         if (!nombre.isEmpty() && !pass.isEmpty() && !pass2.isEmpty() && !email.isEmpty()){
-            insertarUsurario("http://192.168.1.129/Proyecto/Android/registroAndroid.php");
+            insertarUsurario("http://192.168.1.131/Proyecto/Android/Registro/registroAndroid.php");
         }else {
             Toast.makeText(this, "No se permiten campos vacios", Toast.LENGTH_SHORT).show();
         }
@@ -59,6 +62,7 @@ public class Registro extends AppCompatActivity implements View.OnClickListener 
             @Override
             public void onResponse(String response) {
                 if (!response.isEmpty()) {
+
                     if (response.equals("<return>usunuevo</return>")) {
                         Toast.makeText(Registro.this, "Registro completado con exito", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(getApplicationContext(),Login_Main.class);
